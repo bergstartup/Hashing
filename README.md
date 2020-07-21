@@ -14,6 +14,7 @@ Let elements get stored in any order in the array. Let's say the following is th
 <br><br>
 <b>Example</b>
 A dataset made through taking randomized 100 samples within [0,100] range. Following is the scatter plot data points element as x and index as y.
+<br>
 <img src="plots/dataset_scatter.png" alt="scatter plot of sample datasets">
 <br>
 A neural network trained with the above dataset. All hyperparameters are arbitrary. "Overfitting" is made. So, there will be no requirement for tuning hyperparameters. Following is the scatter plot showing correlation with actual data points and output of the neural network.<br>
@@ -21,7 +22,7 @@ Green - Actual data points<br>
 Red - Neural network output<br>
 <img src="plots/correlation_scatter.png" alt="scatter plot of output and actual dataset">
 <br>
-The above showed the discreet output of the neural network. The following shows a continuous plot for input [0,100].
+The above showed the discreet output of the neural network. The following shows a continuous plot for input [0,100].<br>
 <img src="plots/plot.png" alt="continuous plot of neural network">
 <br><br>
 <b>For other data formats</b>
