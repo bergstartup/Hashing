@@ -12,7 +12,7 @@ Neural networks are excellent function approximators. Given (x,y) data points, i
 <b>Neural networks for hashing [My idea :)]</b><br>
 Let elements get stored in any order in the array. Let's say the following is the array <i>[10,15,4,1,5,90]</i> (Oh!! All elements should be unique in the array). The above array in terms of <i>(element, index)</i> pair is (10,0), (15,1), (4,2), (1,3), (5,4), (90,5). These data points used to train a neural network until it <i>overfits</i> the data points. Now, the trained neural network is a function that maps elements to the index. Voila!! A function to represent (element,index) relation without collision.
 <br><br>
-<b>Example</b>
+<b>Example</b><br>
 A dataset made through taking randomized 100 samples within [0,100] range. Following is the scatter plot data points element as x and index as y.
 <br>
 <img src="plots/dataset_scatter.png" alt="scatter plot of sample datasets">
