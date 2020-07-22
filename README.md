@@ -1,13 +1,13 @@
 # Hashing with UAT
 Implementation of hashing data structure with neural networks<br>
 
-Hashing is an excellent data structure to store and retrieve data from an array. It makes data retrieval complexity to O(1). The problem with hashing is hashing function output is bounded. So, there is a high probability that two unique elements could have the same hash value (collision). It makes the hashing concept unusable in practical use cases. There are several methods to overcome the collision. Here I present my version.
+Hashing is an excellent data structure to store and retrieve data from an array. It makes data retrieval complexity as O(1). The problem with hashing is the "hashing function" output is bounded. So, there is a high probability that two unique elements could have the same hash value (collision). It makes the hashing concept unusable in practical use cases. There are several methods to overcome the collision. Here I present my version.
 <br><br>
 <b>Hashing</b><br>
-In general, a hash function maps the element to the respective index. A function f(x) where x is input element and output is an index. It's for faster retrieval of data.
+In general, a hash function maps the element to the respective index. A function f(x) where x is input element and output is its respective index. It's for faster retrieval of data.
 <br><br>
 <b>Neural Networks</b><br>
-Neural networks are excellent function approximators. Given (x,y) data points, it could approximate the relation between x and y. This property of NN is Universal Approximation.
+Neural networks are excellent function approximators. Given (x,y) data points, it could approximate the continuous relation between x and y. This property of NN is Universal Approximation.
 <br><br>
 <b>Neural networks for hashing [My idea :)]</b><br>
 Let elements get stored in any order in the array. Let's say the following is the array <i>[10,15,4,1,5,90]</i> (Oh!! All elements should be unique in the array). The above array in terms of <i>(element, index)</i> pair is (10,0), (15,1), (4,2), (1,3), (5,4), (90,5). These data points used to train a neural network until it <i>overfits</i> the data points. Now, the trained neural network is a function that maps elements to the index. Voila!! A function to represent (element,index) relation without collision.
@@ -17,12 +17,12 @@ A dataset made through taking randomized 100 samples within [0,100] range. Follo
 <br>
 <img src="plots/dataset_scatter.png" alt="scatter plot of sample datasets">
 <br>
-A neural network trained with the above dataset. All hyperparameters are arbitrary. "Overfitting" is made. So, there will be no requirement for tuning hyperparameters. Following is the scatter plot showing correlation with actual data points and output of the neural network.<br>
+A neural network trained with the above dataset. All hyperparameters are arbitrary. "Overfitting" is made.Following is the scatter plot showing correlation with actual data points and output of the neural network.<br>
 Green - Actual data points<br>
 Red - Neural network output<br>
 <img src="plots/correlation_scatter.png" alt="scatter plot of output and actual dataset">
 <br>
-The above showed the discreet output of the neural network. The following shows a continuous plot for input [0,100].<br>
+The above correlation had RMSE of 0.2(approx), the output of NN could be rounded to nearest integer val to get its actual index. The following shows a continuous plot for input [0,100].<br>
 <img src="plots/plot.png" alt="continuous plot of neural network">
 <br><br>
 <b>For other data formats</b>
