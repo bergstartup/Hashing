@@ -1,5 +1,5 @@
-# Hashing
-Implementation of hashing data structure<br>
+# Hashing with UAT
+Implementation of hashing data structure with neural networks<br>
 
 Hashing is an excellent data structure to store and retrieve data from an array. It makes data retrieval complexity to O(1). The problem with hashing is hashing function output is bounded. So, there is a high probability that two unique elements could have the same hash value (collision). It makes the hashing concept unusable in practical use cases. There are several methods to overcome the collision. Here I present my version.
 <br><br>
