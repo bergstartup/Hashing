@@ -7,7 +7,7 @@ Hashing is an excellent data structure to store and retrieve data from an array.
 In general, a hash function maps the element to the respective index. A function f(x) where x is input element and output is its respective index. It's for faster retrieval of data.
 <br><br>
 <b>Neural Networks</b><br>
-Neural networks are excellent function approximators. Given (x,y) data points, it could approximate the continuous relation between x and y. This property of NN is Universal Approximation.
+Neural networks are also known function approximators. Given (x,y) data points, it could approximate the continuous relation between x and y. This property of NN is Universal Approximation.
 <br><br>
 <b>Neural networks for hashing [My idea :)]</b><br>
 Let elements get stored in any order in the array. Let's say the following is the array <i>[10,15,4,1,5,90]</i> (Oh!! All elements should be unique in the array). The above array in terms of <i>(element, index)</i> pair is (10,0), (15,1), (4,2), (1,3), (5,4), (90,5). These data points used to train a neural network until it <i>overfits</i> the data points. Now, the trained neural network is a function that maps elements to the index. Voila!! A function to represent (element,index) relation without collision.
