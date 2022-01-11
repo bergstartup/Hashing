@@ -30,5 +30,3 @@ The above correlation had RMSE of 0.2(approx), the output of NN could be rounded
 This method is fine with any data format array. As long as the elements in the array could represent a unique number. The element x into g(x) function, it makes sure all elements in array get a unique number. The rest is number to respective index (As we discussed above). As long as the function g(x) concerns, It could be SHA-1(x) outputs a 160-bit binary string. Convert to number form and proceed with training the neural network. SHA-1 does have collision issues. Otherwise, an RNN stocked with a traditional neural network is trained for the purpose [Easier].
 <img>
 <br><br>
-<b>Summary</b><br>
-There is no mathematical proof to determine no of layers to use for training. It's arbitrary till now. So, we cant deduce proofs for complexity.
