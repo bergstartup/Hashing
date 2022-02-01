@@ -1,7 +1,7 @@
 # Hashing with UAT
 Implementation of hashing data structure with neural networks<br>
 
-Hashing is an excellent data structure to store and retrieve data from an array. It makes data retrieval complexity as O(1). The problem with hashing is the "hashing function" output is bounded. So, there is a high probability that two unique elements could have the same hash value (collision). It makes the hashing concept unusable in practical use cases. There are several methods to overcome the collision. Here I present my version.
+Hashing is an excellent data structure to store and retrieve data from an array. It makes data retrieval computational complexity as O(1). The problem with hashing is the "hashing function" output is bounded. So, there is a high probability that two unique elements could have the same hash value (collision). It makes the hashing concept unusable in practical use cases. There are several methods to overcome the collision. Here I present my version.
 <br><br>
 <b>Hashing</b><br>
 In general, a hash function maps the element to the respective index. A function f(x) where x is input element and output is its respective index. It's for faster retrieval of data.
